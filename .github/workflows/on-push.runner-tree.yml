@@ -1,0 +1,13 @@
+name: Github Actions Runner Tree
+on: [push]
+jobs:
+  example-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install tree
+        run: apt install tree
+        shell: bash
+      - name: Display runners tree
+        run: tree -f -L 2
+        shell: bash
+      
