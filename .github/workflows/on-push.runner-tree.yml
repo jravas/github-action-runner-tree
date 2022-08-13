@@ -8,6 +8,8 @@ jobs:
         run: sudo apt install tree
         shell: bash
       - name: Display runners tree
-        run: sudo tree -f -L 2
+        run: |
+          cd ../..
+          sudo tree -f -L 2
         shell: bash
       
