@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install tree
-        run: apt install tree
+        run: sudo apt install tree
         shell: bash
       - name: Display runners tree
-        run: tree -f -L 2
+        run: sudo tree -f -L 2
         shell: bash
       
