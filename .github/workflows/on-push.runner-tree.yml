@@ -13,6 +13,6 @@ jobs:
       - name: Display runners tree
         run: |
           cd /
-          sudo tree -f -L 2
+          sudo tree -f -L 1
         shell: bash
       
