@@ -12,7 +12,7 @@ jobs:
         shell: bash
       - name: Display runners tree
         run: |
-          cd ../..
+          cd /
           sudo tree -f -L 2
         shell: bash
       
