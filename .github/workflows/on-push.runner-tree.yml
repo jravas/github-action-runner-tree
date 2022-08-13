@@ -4,23 +4,16 @@ jobs:
   example-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Install tree
-        run: sudo apt install tree
-        shell: bash
       - name: Where am I
         run: pwd
-        shell: bash
       - name: Display tree of default runners dir
         run: sudo tree -f -L 1
-        shell: bash
       - name: Display tree of root runners dir
         run: |
           cd /
           sudo tree -f -L 1
-        shell: bash
       - name: Check out repository onto the runner
         uses: actions/checkout@v3
       - name: Display tree of default runners dir
         run: sudo tree -f -L 1
-        shell: bash
       
