@@ -7,6 +7,9 @@ jobs:
       - name: Install tree
         run: sudo apt install tree
         shell: bash
+      - name: Where am I
+        run: pwd
+        shell: bash
       - name: Display runners tree
         run: |
           cd ../..
