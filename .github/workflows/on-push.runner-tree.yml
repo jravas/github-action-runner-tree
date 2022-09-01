@@ -6,10 +6,13 @@ jobs:
     steps:
       - name: Where am I
         run: pwd
+
       - name: Display tree of default runners dir
         run: sudo tree -f -L 1
+
       - name: Check out repository onto the runner
         uses: actions/checkout@v3
+        
       - name: Display tree of default runners dir
         run: sudo tree -f -L 1
       
